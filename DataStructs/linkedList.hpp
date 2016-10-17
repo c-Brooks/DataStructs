@@ -6,15 +6,11 @@
 //  Copyright © 2016 Corey. All rights reserved.
 //
 
-#ifndef node_hpp
-#define node_hpp
+#ifndef linkedList_hpp
+#define linkedList_hpp
 
 #include <stdio.h>
 
 
 
-
-
-
-
-#endif /* node_hpp */
+#endif /* linkedList_hpp */

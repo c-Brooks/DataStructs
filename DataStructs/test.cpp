@@ -11,7 +11,7 @@
 // Creation
 // Insertion
 // Deletion
-//
+
 
 
 
@@ -24,30 +24,34 @@
 #include <boost/test/included/unit_test.hpp>
 
 /**************** Linked Lists ****************/
-#include "node.cpp"
-#include "node.hpp"
-#include "list.cpp"
-#include "list.hpp"
+#include "linkedList.cpp"
+#include "linkedList.hpp"
 
 
 BOOST_AUTO_TEST_SUITE(LinkedLists)
 
 
 BOOST_AUTO_TEST_CASE(listCreation) {
-    BOOST_CHECK(1 == 1);
+    List testList;
+    BOOST_CHECK(&testList);
 }
 
-
-BOOST_AUTO_TEST_CASE(listTraversal) {
-    BOOST_CHECK(1 == 1);
-}
 
 BOOST_AUTO_TEST_CASE(nodeInsertion) {
-    BOOST_CHECK(1 == 1);
+    List testList;
+    testList.insert(1);
+    BOOST_CHECK(testList.length() == 2);
 }
 
+
 BOOST_AUTO_TEST_CASE(nodeDeletion) {
-    BOOST_CHECK(1 == 1);
+    List testList;
+    testList.insert(1);
+    testList.insert(2);
+    testList.insert(3);
+    BOOST_CHECK(testList.length() == 3);
+    testList.remove(3);
+    BOOST_CHECK(testList.length() == 2);
 }
 
 

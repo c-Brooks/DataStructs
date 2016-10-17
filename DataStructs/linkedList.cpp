@@ -6,8 +6,5 @@
 //  Copyright © 2016 Corey. All rights reserved.
 //
 
-#include "node.hpp"
+#include "linkedList.hpp"
 
-class Node {
-    
-};
