@@ -6,8 +6,8 @@
 //  Copyright © 2016 Corey. All rights reserved.
 //
 
-#ifndef LinkedList_hpp
-#define LinkedList_hpp
+#ifndef node_hpp
+#define node_hpp
 
 #include <stdio.h>
 
@@ -17,4 +17,4 @@
 
 
 
-#endif /* LinkedList_hpp */
+#endif /* node_hpp */

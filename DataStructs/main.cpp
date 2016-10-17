@@ -8,8 +8,4 @@
 
 #include <iostream>
 
-int main1(void) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
-}
+// Empty for now
