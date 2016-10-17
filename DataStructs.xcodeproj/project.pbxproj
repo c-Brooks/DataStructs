@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		04220FED1DB49C3A006FAA9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04220FEC1DB49C3A006FAA9E /* main.cpp */; };
+		04220FF41DB4A021006FAA9E /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04220FF31DB4A021006FAA9E /* test.cpp */; };
+		04220FF61DB4AB71006FAA9E /* libboost_unit_test_framework.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04220FF51DB4AB71006FAA9E /* libboost_unit_test_framework.dylib */; };
+		04AD2E781DB4DE0C00536268 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04AD2E761DB4DE0C00536268 /* LinkedList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,10 @@
 /* Begin PBXFileReference section */
 		04220FE91DB49C3A006FAA9E /* DataStructs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructs; sourceTree = BUILT_PRODUCTS_DIR; };
 		04220FEC1DB49C3A006FAA9E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		04220FF31DB4A021006FAA9E /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		04220FF51DB4AB71006FAA9E /* libboost_unit_test_framework.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libboost_unit_test_framework.dylib; sourceTree = "<group>"; };
+		04AD2E761DB4DE0C00536268 /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
+		04AD2E771DB4DE0C00536268 /* LinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04220FF61DB4AB71006FAA9E /* libboost_unit_test_framework.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +51,7 @@
 			children = (
 				04220FEB1DB49C3A006FAA9E /* DataStructs */,
 				04220FEA1DB49C3A006FAA9E /* Products */,
+				04220FF51DB4AB71006FAA9E /* libboost_unit_test_framework.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				04220FEC1DB49C3A006FAA9E /* main.cpp */,
+				04220FF31DB4A021006FAA9E /* test.cpp */,
+				04AD2E761DB4DE0C00536268 /* LinkedList.cpp */,
+				04AD2E771DB4DE0C00536268 /* LinkedList.hpp */,
 			);
 			path = DataStructs;
 			sourceTree = "<group>";
@@ -120,6 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04220FED1DB49C3A006FAA9E /* main.cpp in Sources */,
+				04AD2E781DB4DE0C00536268 /* LinkedList.cpp in Sources */,
+				04220FF41DB4A021006FAA9E /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +230,11 @@
 		04220FF11DB49C3A006FAA9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /Users/corey/code/boost/1.62.0/include;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/corey/code/boost/1.62.0/lib,
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +242,11 @@
 		04220FF21DB49C3A006FAA9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /Users/corey/code/boost/1.62.0/include;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/corey/code/boost/1.62.0/lib,
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -246,6 +270,7 @@
 				04220FF21DB49C3A006FAA9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

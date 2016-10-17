@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
+int main1(void) {
     // insert code here...
     std::cout << "Hello, World!\n";
     return 0;
