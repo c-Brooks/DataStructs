@@ -11,6 +11,37 @@
 
 #include <stdio.h>
 
+// Eventually, multiple types will be supported
+typedef int Type;
+
+class Node;
+
+
+class List {
+    
+public:
+    List() { list = 0; }
+    ~List() { remove(); }
+
+    void remove();
+    int getLength() { return length; };
+private:
+    Node *list;
+    int length;
+    
+};
+
+
+class Node {
+    friend class List;
+private:
+    Node(Type value, Node *node) {
+        val = value; next = node;
+    }
+    Type val;
+    Node *next;
+};
+
 
 
 #endif /* linkedList_hpp */

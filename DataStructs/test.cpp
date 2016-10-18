@@ -24,7 +24,6 @@
 #include <boost/test/included/unit_test.hpp>
 
 /**************** Linked Lists ****************/
-#include "linkedList.cpp"
 #include "linkedList.hpp"
 
 
@@ -38,20 +37,20 @@ BOOST_AUTO_TEST_CASE(listCreation) {
 
 
 BOOST_AUTO_TEST_CASE(nodeInsertion) {
-    List testList;
-    testList.insert(1);
-    BOOST_CHECK(testList.length() == 2);
+//    List testList;
+//    testList.insertOne(1);
+//    BOOST_CHECK(testList.getLength() == 2);
 }
 
 
 BOOST_AUTO_TEST_CASE(nodeDeletion) {
-    List testList;
-    testList.insert(1);
-    testList.insert(2);
-    testList.insert(3);
-    BOOST_CHECK(testList.length() == 3);
-    testList.remove(3);
-    BOOST_CHECK(testList.length() == 2);
+//    List testList;
+//    testList.insertOne(1);
+//    testList.insertOne(2);
+//    testList.insertOne(3);
+//    BOOST_CHECK(testList.getLength() == 3);
+//    testList.removeOne(3);
+//    BOOST_CHECK(testList.getLength() == 2);
 }
 
 

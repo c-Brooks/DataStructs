@@ -10,8 +10,7 @@
 		04220FED1DB49C3A006FAA9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04220FEC1DB49C3A006FAA9E /* main.cpp */; };
 		04220FF41DB4A021006FAA9E /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04220FF31DB4A021006FAA9E /* test.cpp */; };
 		04220FF61DB4AB71006FAA9E /* libboost_unit_test_framework.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04220FF51DB4AB71006FAA9E /* libboost_unit_test_framework.dylib */; };
-		04AD2E781DB4DE0C00536268 /* node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04AD2E761DB4DE0C00536268 /* node.cpp */; };
-		04AD2E7C1DB4E80800536268 /* list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04AD2E7A1DB4E80800536268 /* list.cpp */; };
+		04AD2E781DB4DE0C00536268 /* linkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04AD2E761DB4DE0C00536268 /* linkedList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,10 +30,8 @@
 		04220FEC1DB49C3A006FAA9E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		04220FF31DB4A021006FAA9E /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		04220FF51DB4AB71006FAA9E /* libboost_unit_test_framework.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libboost_unit_test_framework.dylib; sourceTree = "<group>"; };
-		04AD2E761DB4DE0C00536268 /* node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = node.cpp; sourceTree = "<group>"; };
-		04AD2E771DB4DE0C00536268 /* node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = node.hpp; sourceTree = "<group>"; };
-		04AD2E7A1DB4E80800536268 /* list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list.cpp; sourceTree = "<group>"; };
-		04AD2E7B1DB4E80800536268 /* list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = list.hpp; sourceTree = "<group>"; };
+		04AD2E761DB4DE0C00536268 /* linkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linkedList.cpp; sourceTree = "<group>"; };
+		04AD2E771DB4DE0C00536268 /* linkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = linkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +76,8 @@
 		04AD2E791DB4E7A200536268 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				04AD2E761DB4DE0C00536268 /* node.cpp */,
-				04AD2E771DB4DE0C00536268 /* node.hpp */,
-				04AD2E7A1DB4E80800536268 /* list.cpp */,
-				04AD2E7B1DB4E80800536268 /* list.hpp */,
+				04AD2E761DB4DE0C00536268 /* linkedList.cpp */,
+				04AD2E771DB4DE0C00536268 /* linkedList.hpp */,
 			);
 			name = LinkedList;
 			sourceTree = "<group>";
@@ -145,8 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04220FED1DB49C3A006FAA9E /* main.cpp in Sources */,
-				04AD2E7C1DB4E80800536268 /* list.cpp in Sources */,
-				04AD2E781DB4DE0C00536268 /* node.cpp in Sources */,
+				04AD2E781DB4DE0C00536268 /* linkedList.cpp in Sources */,
 				04220FF41DB4A021006FAA9E /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

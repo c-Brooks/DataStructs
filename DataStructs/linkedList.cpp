@@ -8,3 +8,13 @@
 
 #include "linkedList.hpp"
 
+// LIST
+void List::remove() {
+    Node *pt = list;
+
+    while(pt) {
+        Node *temp = pt;
+        pt = pt->next;
+        delete temp;
+    }
+}
