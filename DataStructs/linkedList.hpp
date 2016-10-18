@@ -24,7 +24,11 @@ public:
     ~List() { remove(); }
 
     void remove();
+    void remove(Type);
+    void insert(Type);
+    
     int getLength() { return length; };
+    
 private:
     Node *list;
     int length;

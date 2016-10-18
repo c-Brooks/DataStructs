@@ -18,3 +18,14 @@ void List::remove() {
         delete temp;
     }
 }
+
+
+
+void List::remove(Type val) {
+    
+}
+
+
+void List::insert(Type val) {
+    
+}
