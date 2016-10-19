@@ -24,8 +24,10 @@ public:
     ~List() { remove(); }
 
     void remove();
-    void remove(Type);
-    void insert(Type);
+    
+    void remove(Type); // Removes ALL instances of the element
+    void push(Type);
+    void pop();
     
     int getLength();
     

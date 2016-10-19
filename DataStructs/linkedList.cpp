@@ -8,6 +8,8 @@
 
 #include "linkedList.hpp"
 #include <assert.h>
+#include <stdio.h>
+#include <iostream>
 
 // LIST
 void List::remove() {
@@ -23,11 +25,29 @@ void List::remove() {
 
 
 void List::remove(Type val) {
+    Node *pt = list;
+        while (pt && pt->val == val) {
+            Node *temp = pt->next;
+            delete pt;
+            pt = temp;
+        }
+    if ((list = pt) == 0) {
+        return;
+    }
     
+    Node *prv = pt; pt = pt->next;
+    while (pt) {
+        std::cout << pt->val << std::endl;
+        if (pt->val == val) {
+            prv->next = pt->next;
+        } else {
+            pt = pt->next;
+        }
+    }
 }
 
 
-void List::insert(Type val) {
+void List::push(Type val) {
     Node *pt = new Node(val, list);
     assert(pt != 0); // Make sure we have enough memory
     list = pt;
@@ -46,5 +66,7 @@ int List::getLength() {
     }
 }
 
-
+void List::pop() {
+    
+}
 

@@ -9,7 +9,7 @@
 
 // Tests for LinkedList:
 // Creation
-// Insertion
+// Pushing / Pop
 // Deletion
 
 
@@ -38,23 +38,26 @@ BOOST_AUTO_TEST_CASE(listCreation) {
 
 BOOST_AUTO_TEST_CASE(nodeInsertion) {
     List testList;
-    testList.insert(1);
+    BOOST_CHECK(testList.getLength() == 0);
+    testList.push(1);
     BOOST_CHECK(testList.getLength() == 1);
 }
 
 
 BOOST_AUTO_TEST_CASE(nodeDeletion) {
     List testList;
-    testList.insert(1);
-    testList.insert(2);
-    testList.insert(3);
+    testList.push(1);
+    testList.push(2);
+    testList.push(3);
     BOOST_CHECK(testList.getLength() == 3);
+    std::cout << testList.getLength() << std::endl;
     testList.remove(3);
+    std::cout << testList.getLength() << std::endl;
     BOOST_CHECK(testList.getLength() == 2);
 }
 
 
-
 BOOST_AUTO_TEST_SUITE_END()
+
 
 /**********************************************/
