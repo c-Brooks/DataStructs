@@ -15,10 +15,6 @@
 
 
 
-
-
-#include <stdio.h>
-#include <iostream>
 #define BOOST_TEST_MODULE LinkedListTest
 
 #include <boost/test/included/unit_test.hpp>
@@ -51,12 +47,12 @@ BOOST_AUTO_TEST_CASE(nodeDeletion) {
     List testList;
     testList.push(1);
     testList.push(2);
-    testList.push(3);
+    testList.push(2);
     BOOST_CHECK(testList.getLength() == 3);
     std::cout << "\tLength before remove: " << testList.getLength() << std::endl;
-    testList.remove(3);
+    testList.remove(2);
     std::cout << "\tLength after remove: " << testList.getLength() << std::endl;
-    BOOST_CHECK(testList.getLength() == 2);
+    BOOST_CHECK(testList.getLength() == 1);
     std::cout << "Node deletion test passed.\n" << std::endl;
 }
 
