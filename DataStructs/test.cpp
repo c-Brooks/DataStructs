@@ -39,7 +39,7 @@ BOOST_AUTO_TEST_CASE(listCreation) {
 BOOST_AUTO_TEST_CASE(nodeInsertion) {
     List testList;
     testList.insert(1);
-    BOOST_CHECK(testList.getLength() == 2);
+    BOOST_CHECK(testList.getLength() == 1);
 }
 
 

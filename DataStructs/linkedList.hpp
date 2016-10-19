@@ -27,12 +27,10 @@ public:
     void remove(Type);
     void insert(Type);
     
-    int getLength() { return length; };
+    int getLength();
     
 private:
     Node *list;
-    int length;
-    
 };
 
 

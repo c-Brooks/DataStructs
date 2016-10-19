@@ -7,6 +7,7 @@
 //
 
 #include "linkedList.hpp"
+#include <assert.h>
 
 // LIST
 void List::remove() {
@@ -27,5 +28,23 @@ void List::remove(Type val) {
 
 
 void List::insert(Type val) {
-    
+    Node *pt = new Node(val, list);
+    assert(pt != 0); // Make sure we have enough memory
+    list = pt;
 }
+
+int List::getLength() {
+    if (list == 0){
+        return 0;
+    } else {
+        Node *pt = list; int count = 0;
+        while (pt) {
+            pt = pt->next;
+            count++;
+        }
+        return count;
+    }
+}
+
+
+
