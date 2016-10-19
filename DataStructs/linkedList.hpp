@@ -23,13 +23,13 @@ public:
     List() { list = 0; }
     ~List() { remove(); }
 
-    void remove();
+    void remove();     // Deletes the whole List
     
     void remove(Type); // Removes ALL instances of the element
     void push(Type);
     void pop();
     
-    int getLength();
+    int getLength();   // Used for testing purposes
     
 private:
     Node *list;
@@ -38,7 +38,9 @@ private:
 
 class Node {
     friend class List;
+    
 private:
+    // A node represents one element in the list
     Node(Type value, Node *node) {
         val = value; next = node;
     }

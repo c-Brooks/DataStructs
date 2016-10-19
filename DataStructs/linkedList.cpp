@@ -37,7 +37,6 @@ void List::remove(Type val) {
     
     Node *prv = pt; pt = pt->next;
     while (pt) {
-        std::cout << pt->val << std::endl;
         if (pt->val == val) {
             prv->next = pt->next;
         } else {
