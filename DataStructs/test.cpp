@@ -50,9 +50,9 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         testList.push(2);
         BOOST_CHECK(testList.getLength() == 3);
         std::cout << "\tLength before pop: " << testList.getLength() << std::endl;
-        testList.pop(); // Should delete BOTH instances of value 2
-        std::cout << "\tLength after pop: " << testList.getLength() << std::endl;
-        BOOST_CHECK(testList.getLength() == 1);
+        testList.pop();
+        std::cout << "\tLength after pop: "  << testList.getLength() << std::endl;
+        BOOST_CHECK(testList.getLength() == 2);
         std::cout << "Node popping test passed.\n" << std::endl;
     }
     
@@ -65,7 +65,7 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         BOOST_CHECK(testList.getLength() == 3);
         std::cout << "\tLength before remove: " << testList.getLength() << std::endl;
         testList.remove(2); // Should delete BOTH instances of value 2
-        std::cout << "\tLength after remove: " << testList.getLength() << std::endl;
+        std::cout << "\tLength after remove: "  << testList.getLength() << std::endl;
         BOOST_CHECK(testList.getLength() == 1);
         std::cout << "Node deletion test passed.\n" << std::endl;
     }
@@ -79,7 +79,7 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         BOOST_CHECK(testList.get(0) == 1);
         BOOST_CHECK(testList.get(1) == 2);
         BOOST_CHECK(testList.get(2) == 2);
-        std::cout << "Node deletion test passed.\n" << std::endl;
+        std::cout << "Node access test passed.\n" << std::endl;
     }
         
     
