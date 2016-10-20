@@ -29,7 +29,8 @@ public:
     void push(Type);
     void pop();
     
-    int getLength();   // Used for testing purposes
+    Type get(int index);
+    int  getLength();   // Used for testing purposes
     
 private:
     Node *list;
