@@ -14,7 +14,9 @@
 // LIST
 void List::remove() {
     Node *pt = list;
-
+    if (!pt) {
+        return;
+    }
     while(pt) {
         Node *temp = pt;
         pt = pt->next;
@@ -66,6 +68,32 @@ int List::getLength() {
 }
 
 void List::pop() {
-    
+    Node *pt  = list;
+    if (!pt) {
+        return;
+    } else {
+        Node *tempPtr = pt;
+        list = pt->next;
+        delete tempPtr;
+    }
 }
+
+
+
+Type List::get(int index) {
+    Node *pt = list;
+    if (index == 0) {
+        return pt->val;
+    }
+    int count;
+    while (pt) {
+        if (count == index) {
+            return pt->val;
+        } else {
+            pt = pt->next;
+        }
+    }
+    return 1;
+}
+
 

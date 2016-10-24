@@ -47,7 +47,7 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         List testList;
         testList.push(1);
         testList.push(2);
-        testList.push(2);
+        testList.push(3);
         BOOST_CHECK(testList.getLength() == 3);
         std::cout << "\tLength before pop: " << testList.getLength() << std::endl;
         testList.pop();
