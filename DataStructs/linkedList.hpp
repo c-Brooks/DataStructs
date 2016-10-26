@@ -26,7 +26,7 @@ public:
     void remove();     // Deletes the whole List
     
     void remove(Type); // Removes ALL instances of the element
-    void push(Type);
+    void insert(Type);
     void pop();
     
     Type get(int index);

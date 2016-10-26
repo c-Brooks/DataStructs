@@ -9,7 +9,7 @@
 
 // Tests for LinkedList:
 // Creation
-// Pushing / Pop
+// Inserting / Pop
 // Deletion
 
 
@@ -36,7 +36,7 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         std::cout << "Checking node insertion..." << std::endl;
         List testList;
         BOOST_CHECK(testList.getLength() == 0);
-        testList.push(1);
+        testList.insert(1);
         BOOST_CHECK(testList.getLength() == 1);
         std::cout << "Node insertion test passed.\n" << std::endl;
     }
@@ -45,9 +45,9 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
     BOOST_AUTO_TEST_CASE(nodePop) {
         std::cout << "Checking node pop..." << std::endl;
         List testList;
-        testList.push(1);
-        testList.push(2);
-        testList.push(3);
+        testList.insert(1);
+        testList.insert(2);
+        testList.insert(3);
         BOOST_CHECK(testList.getLength() == 3);
         std::cout << "\tLength before pop: " << testList.getLength() << std::endl;
         testList.pop();
@@ -59,9 +59,9 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
     BOOST_AUTO_TEST_CASE(nodeDeletion) {
         std::cout << "Checking node deletion..." << std::endl;
         List testList;
-        testList.push(1);
-        testList.push(2);
-        testList.push(2);
+        testList.insert(1);
+        testList.insert(2);
+        testList.insert(2);
         BOOST_CHECK(testList.getLength() == 3);
         std::cout << "\tLength before remove: " << testList.getLength() << std::endl;
         testList.remove(2); // Should delete BOTH instances of value 2
@@ -73,12 +73,15 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
     BOOST_AUTO_TEST_CASE(nodeAccess) {
         std::cout << "Checking node access" << std::endl;
         List testList;
-        testList.push(1);
-        testList.push(2);
-        testList.push(2);
-        BOOST_CHECK(testList.get(0) == 1);
+        testList.insert(1);
+        testList.insert(2);
+        testList.insert(3);
+        BOOST_CHECK(testList.get(0) == 3);
+        std::cout << "\tIndex 0:  " << testList.get(0) << std::endl;
         BOOST_CHECK(testList.get(1) == 2);
-        BOOST_CHECK(testList.get(2) == 2);
+        std::cout << "\tIndex 1:  " << testList.get(1) << std::endl;
+        BOOST_CHECK(testList.get(2) == 1);
+        std::cout << "\tIndex 2:  " << testList.get(2) << std::endl;
         std::cout << "Node access test passed.\n" << std::endl;
     }
         

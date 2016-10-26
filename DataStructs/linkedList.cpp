@@ -48,7 +48,7 @@ void List::remove(Type val) {
 }
 
 
-void List::push(Type val) {
+void List::insert(Type val) {
     Node *pt = new Node(val, list);
     assert(pt != 0); // Make sure we have enough memory
     list = pt;
@@ -85,7 +85,8 @@ Type List::get(int index) {
     if (index == 0) {
         return pt->val;
     }
-    int count;
+    pt = pt->next;
+    int count = 0;
     while (pt) {
         if (count == index) {
             return pt->val;
