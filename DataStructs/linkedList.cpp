@@ -86,15 +86,16 @@ Type List::get(int index) {
         return pt->val;
     }
     pt = pt->next;
-    int count = 0;
+    int count = 1;
     while (pt) {
         if (count == index) {
             return pt->val;
         } else {
             pt = pt->next;
+            count++;
         }
     }
-    return 1;
+    return -1;
 }
 
 
