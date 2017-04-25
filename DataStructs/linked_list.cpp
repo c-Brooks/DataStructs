@@ -1,12 +1,12 @@
 //
-//  LinkedList.cpp
+//  linked_list.cpp
 //  DataStructs
 //
 //  Created by Corey on 17 10, 2016.
 //  Copyright © 2016 Corey. All rights reserved.
 //
 
-#include "linkedList.hpp"
+#include "linked_list.hpp"
 #include <assert.h>
 #include <stdio.h>
 #include <iostream>
@@ -23,8 +23,6 @@ void List::remove() {
         delete temp;
     }
 }
-
-
 
 void List::remove(Type val) {
     Node *pt = list;
@@ -46,7 +44,6 @@ void List::remove(Type val) {
         }
     }
 }
-
 
 void List::insert(Type val) {
     Node *pt = new Node(val, list);
@@ -77,8 +74,6 @@ void List::pop() {
         delete tempPtr;
     }
 }
-
-
 
 Type List::get(int index) {
     Node *pt = list;

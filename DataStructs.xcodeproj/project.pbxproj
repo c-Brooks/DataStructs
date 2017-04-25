@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041DE6381EAF129E00C2EA88 /* red_black_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 041DE6361EAF129E00C2EA88 /* red_black_tree.cpp */; };
 		04220FED1DB49C3A006FAA9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04220FEC1DB49C3A006FAA9E /* main.cpp */; };
-		04220FF41DB4A021006FAA9E /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04220FF31DB4A021006FAA9E /* test.cpp */; };
 		04220FF61DB4AB71006FAA9E /* libboost_unit_test_framework.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04220FF51DB4AB71006FAA9E /* libboost_unit_test_framework.dylib */; };
-		04AD2E781DB4DE0C00536268 /* linkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04AD2E761DB4DE0C00536268 /* linkedList.cpp */; };
+		049713791EAF1A6400BB4664 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049713771EAF1A6400BB4664 /* test.cpp */; };
+		04AD2E781DB4DE0C00536268 /* linked_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04AD2E761DB4DE0C00536268 /* linked_list.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,12 +27,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		041DE6361EAF129E00C2EA88 /* red_black_tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = red_black_tree.cpp; sourceTree = "<group>"; };
+		041DE6371EAF129E00C2EA88 /* red_black_tree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = red_black_tree.hpp; sourceTree = "<group>"; };
 		04220FE91DB49C3A006FAA9E /* DataStructs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructs; sourceTree = BUILT_PRODUCTS_DIR; };
 		04220FEC1DB49C3A006FAA9E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		04220FF31DB4A021006FAA9E /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		04220FF51DB4AB71006FAA9E /* libboost_unit_test_framework.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libboost_unit_test_framework.dylib; sourceTree = "<group>"; };
-		04AD2E761DB4DE0C00536268 /* linkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linkedList.cpp; sourceTree = "<group>"; };
-		04AD2E771DB4DE0C00536268 /* linkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = linkedList.hpp; sourceTree = "<group>"; };
+		049713771EAF1A6400BB4664 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		04AD2E761DB4DE0C00536268 /* linked_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linked_list.cpp; sourceTree = "<group>"; };
+		04AD2E771DB4DE0C00536268 /* linked_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = linked_list.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041DE6351EAF128300C2EA88 /* RedBlackTree */ = {
+			isa = PBXGroup;
+			children = (
+				041DE6361EAF129E00C2EA88 /* red_black_tree.cpp */,
+				041DE6371EAF129E00C2EA88 /* red_black_tree.hpp */,
+			);
+			name = RedBlackTree;
+			sourceTree = "<group>";
+		};
 		04220FE01DB49C3A006FAA9E = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				04220FEC1DB49C3A006FAA9E /* main.cpp */,
-				04220FF31DB4A021006FAA9E /* test.cpp */,
+				049713771EAF1A6400BB4664 /* test.cpp */,
+				041DE6351EAF128300C2EA88 /* RedBlackTree */,
 				04AD2E791DB4E7A200536268 /* LinkedList */,
 			);
 			path = DataStructs;
@@ -76,8 +89,8 @@
 		04AD2E791DB4E7A200536268 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				04AD2E761DB4DE0C00536268 /* linkedList.cpp */,
-				04AD2E771DB4DE0C00536268 /* linkedList.hpp */,
+				04AD2E761DB4DE0C00536268 /* linked_list.cpp */,
+				04AD2E771DB4DE0C00536268 /* linked_list.hpp */,
 			);
 			name = LinkedList;
 			sourceTree = "<group>";
@@ -108,7 +121,7 @@
 		04220FE11DB49C3A006FAA9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Corey;
 				TargetAttributes = {
 					04220FE81DB49C3A006FAA9E = {
@@ -139,9 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041DE6381EAF129E00C2EA88 /* red_black_tree.cpp in Sources */,
 				04220FED1DB49C3A006FAA9E /* main.cpp in Sources */,
-				04AD2E781DB4DE0C00536268 /* linkedList.cpp in Sources */,
-				04220FF41DB4A021006FAA9E /* test.cpp in Sources */,
+				04AD2E781DB4DE0C00536268 /* linked_list.cpp in Sources */,
+				049713791EAF1A6400BB4664 /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +180,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -213,6 +228,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

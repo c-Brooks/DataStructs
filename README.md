@@ -7,7 +7,7 @@ Exploring common data structures in C++ using test-driven development
 - LinkedList
 
 ### In progress
-
+- Red-Black Tree (RB Tree)
 
 ### Future
 - Doubly Linked List
