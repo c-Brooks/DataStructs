@@ -7,3 +7,14 @@
 //
 
 #include "red_black_tree.hpp"
+
+// Teardown:
+// Execute a depth-first search and
+//   delete all the leaf nodes.
+void RBTree::remove() {
+    Node *pt = root;
+    if (!pt) {
+        return;
+    }
+    delete pt;
+}
