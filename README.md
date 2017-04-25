@@ -1,13 +1,13 @@
 # DataStructs
-Exploring common data structures in C++ using test-driven development 
+Exploring common data structures in C++ using test-driven development
 
 ## Features
 
 ### Done
-- Nothing yet
+- LinkedList
 
 ### In progress
-- Linked List
+
 
 ### Future
 - Doubly Linked List
@@ -16,5 +16,5 @@ Exploring common data structures in C++ using test-driven development
 - Heap
 
 
-##  Dependencies: 
+##  Dependencies:
 - Boost (for unit testing)

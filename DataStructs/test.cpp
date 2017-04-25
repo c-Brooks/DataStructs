@@ -30,8 +30,8 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         BOOST_CHECK(&testList);
         std::cout << "List creation test passed.\n" << std::endl;
     }
-    
-    
+
+
     BOOST_AUTO_TEST_CASE(nodeInsertion) {
         std::cout << "Checking node insertion..." << std::endl;
         List testList;
@@ -40,8 +40,8 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         BOOST_CHECK(testList.getLength() == 1);
         std::cout << "Node insertion test passed.\n" << std::endl;
     }
-    
-    
+
+
     BOOST_AUTO_TEST_CASE(nodePop) {
         std::cout << "Checking node pop..." << std::endl;
         List testList;
@@ -55,7 +55,7 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         BOOST_CHECK(testList.getLength() == 2);
         std::cout << "Node popping test passed.\n" << std::endl;
     }
-    
+
     BOOST_AUTO_TEST_CASE(nodeDeletion) {
         std::cout << "Checking node deletion..." << std::endl;
         List testList;
@@ -69,7 +69,7 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         BOOST_CHECK(testList.getLength() == 1);
         std::cout << "Node deletion test passed.\n" << std::endl;
     }
-    
+
     BOOST_AUTO_TEST_CASE(nodeAccess) {
         std::cout << "Checking node access" << std::endl;
         List testList;
@@ -84,9 +84,9 @@ BOOST_AUTO_TEST_SUITE(LinkedLists)
         std::cout << "\tIndex 2:  " << testList.get(2) << std::endl;
         std::cout << "Node access test passed.\n" << std::endl;
     }
-        
-    
+
+
     BOOST_AUTO_TEST_SUITE_END()
-    
-    
+
+
     /**********************************************/

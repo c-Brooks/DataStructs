@@ -36,7 +36,7 @@ void List::remove(Type val) {
     if ((list = pt) == 0) {
         return;
     }
-    
+
     Node *prv = pt; pt = pt->next;
     while (pt) {
         if (pt->val == val) {
@@ -97,5 +97,3 @@ Type List::get(int index) {
     }
     return -1;
 }
-
-

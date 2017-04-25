@@ -18,20 +18,20 @@ class Node;
 
 
 class List {
-    
+
 public:
     List() { list = 0; }
     ~List() { remove(); }
 
     void remove();     // Deletes the whole List
-    
+
     void remove(Type); // Removes ALL instances of the element
     void insert(Type);
     void pop();
-    
+
     Type get(int index);
     int  getLength();   // Used for testing purposes
-    
+
 private:
     Node *list;
 };
@@ -39,7 +39,7 @@ private:
 
 class Node {
     friend class List;
-    
+
 private:
     // A node represents one element in the list
     Node(Type value, Node *node) {
