@@ -23,10 +23,45 @@ BOOST_AUTO_TEST_CASE(treeCreation) {
     std::cout << "Checking RBTree creation..." << std::endl;
     RBTree testRBTree;
     BOOST_CHECK(&testRBTree);
-    std::cout << "RBTree screation test passed.\n" << std::endl;
+    std::cout << "RBTree creation test passed.\n" << std::endl;
 }
 
+BOOST_AUTO_TEST_CASE(treeInsertion) {
+    RBTree testRBTree;
+    testRBTree.insert(1);
 
+    // Create a copy of root node to traverse
+    Node *traverser = testRBTree.root;
+
+    int i = 0;
+    while(traverser) {
+        traverser = traverser->left;
+        i++;
+    }
+    BOOST_CHECK(i == 1);
+
+    testRBTree.insert(4);
+    i = 0;
+    traverser = testRBTree.root;
+    while(traverser) {
+        traverser = traverser->left;
+        i++;
+    }
+    BOOST_CHECK(i == 1);
+
+
+    testRBTree.insert(3);
+    testRBTree.insert(7);
+
+    i = 0;
+    traverser = testRBTree.root;
+    while(traverser) {
+        traverser = traverser->left;
+        i++;
+    }
+    BOOST_CHECK(i == 2);
+
+}
 
 BOOST_AUTO_TEST_SUITE_END()
 

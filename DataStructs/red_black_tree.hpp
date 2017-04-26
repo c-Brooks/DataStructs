@@ -19,12 +19,22 @@ class Node;
 class RBTree {
 
   public:
+      Node *root;
       RBTree() { root = 0; }
       ~RBTree() { remove(); }
 
+
       void remove(); // Teardown
+
+      Type remove(Type t);
+      void insert(Type t);
+
+
   private:
-      Node *root;
+
+      // Rotation
+      void leftRotate(RBTree *subTree, Node *u);
+      void rightRotate(RBTree *subTree, Node *u);
 };
 
 
@@ -34,10 +44,13 @@ class RBTree {
 class Node {
     friend class RBTree;
 
+// TODO: These should be private members
+public:
+    Node *left, *right, *parent;
+
 private:
     enum { red, black } colour;
     Type val;
-    Node *left, *right, *parent;
 };
 
 
