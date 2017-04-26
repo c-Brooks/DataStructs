@@ -11,10 +11,20 @@
 // Teardown:
 // Execute a depth-first search and
 //   delete all the leaf nodes.
+// TODO: We leakin' ho!
 void RBTree::remove() {
     Node *pt = root;
     if (!pt) {
         return;
     }
     delete pt;
+}
+
+
+Type RBTree::remove(Type val) {
+  return 1;
+}
+
+void RBTree::insert(Type val) {
+  
 }

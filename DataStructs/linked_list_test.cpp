@@ -77,6 +77,8 @@ BOOST_AUTO_TEST_CASE(listCreation) {
         BOOST_CHECK(testList.get(2) == 1);
         std::cout << "\tIndex 2:  " << testList.get(2) << std::endl;
         std::cout << "Node access test passed.\n" << std::endl;
+        std::cout << "******************************************" << std::endl;
+
     }
 
 
