@@ -14,13 +14,13 @@
 // For now, only support int
 typedef int Type;
 
-class Node;
+class RBTree_Node;
 
 class RBTree {
 
   public:
-      Node *root;
-      RBTree() { root = 0; }
+      RBTree_Node *root;
+      RBTree(RBTree_Node *node = 0) { root = node; }
       ~RBTree() { remove(); }
 
 
@@ -33,24 +33,34 @@ class RBTree {
   private:
 
       // Rotation
-      void leftRotate(RBTree *subTree, Node *u);
-      void rightRotate(RBTree *subTree, Node *u);
+      void leftRotate(RBTree *subTree, RBTree_Node *u);
+      void rightRotate(RBTree *subTree, RBTree_Node *u);
 };
 
 
 // A node represents one element in the tree
 // Since it is a Binary Tree, it has normal pointers to left and right children
 // and its parent, as well as containing data and a colour, red or black
-class Node {
+class RBTree_Node {
     friend class RBTree;
 
 // TODO: These should be private members
 public:
-    Node *left, *right, *parent;
+
+    RBTree_Node(Type value = 0, RBTree_Node *p = NULL) {
+        val    = value;
+        parent = p;
+        right  = NULL;
+        left   = NULL;
+        colour = black;
+    }
+
+    RBTree_Node *left, *right, *parent;
+    void printVal();
+    Type val;
 
 private:
     enum { red, black } colour;
-    Type val;
 };
 
 
