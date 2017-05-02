@@ -20,7 +20,7 @@ class RBTree {
 
   public:
       RBTree_Node *root;
-      RBTree(RBTree_Node *node = 0) { root = node; }
+      RBTree(RBTree_Node *node) { root = node; }
       ~RBTree() { remove(); }
 
 
@@ -29,12 +29,14 @@ class RBTree {
       Type remove(Type t);
       void insert(Type t);
 
+      void testRightRotate(RBTree_Node *u);
+      void testLeftRotate(RBTree_Node *u);
 
   private:
 
       // Rotation
-      void leftRotate(RBTree *subTree, RBTree_Node *u);
-      void rightRotate(RBTree *subTree, RBTree_Node *u);
+      void leftRotate(RBTree_Node *u);
+      void rightRotate(RBTree_Node *u);
 };
 
 
