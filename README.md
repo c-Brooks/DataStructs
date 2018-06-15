@@ -15,7 +15,6 @@ Exploring common data structures in C++ using test-driven development
 - Stack
 - Heap
 
-
 ##  Dependencies:
 - Boost (for unit testing)
 
