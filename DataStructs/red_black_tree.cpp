@@ -70,7 +70,6 @@ void RBTree::insert(Type val) {
         i++;
     }
     pt->left = new RBTree_Node(val, pt);
-    delete pt;
 }
 
 // ===== Private =====
