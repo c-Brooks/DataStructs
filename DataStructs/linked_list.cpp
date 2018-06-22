@@ -75,6 +75,18 @@ void List::pop() {
     }
 }
 
+void List::push(Type val) {
+    Node *pt  = list;
+    if (!pt) {
+        insert(val);
+    } else {
+        while (pt) {
+            pt = pt->next;
+        }
+        pt = new Node(val, list);
+    }
+}
+
 Type List::get(int index) {
     Node *pt = list;
     if (index == 0) {
