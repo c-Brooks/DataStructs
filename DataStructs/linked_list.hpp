@@ -28,6 +28,7 @@ public:
     void remove(Type); // Removes ALL instances of the element
     void insert(Type);
     void pop();
+    void push(Type);
 
     Type get(int index);
     int  getLength();   // Used for testing purposes
