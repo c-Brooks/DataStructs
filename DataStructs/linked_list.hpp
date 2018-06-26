@@ -30,6 +30,7 @@ public:
     void pop();
     void push(Type);
 
+    Type peek();
     Type get(int index);
     int  getLength();   // Used for testing purposes
 

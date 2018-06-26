@@ -87,6 +87,11 @@ void List::push(Type val) {
     }
 }
 
+Type List::peek() {
+    Node *pt  = list;
+    return pt->val;
+}
+
 Type List::get(int index) {
     Node *pt = list;
     if (index == 0) {
