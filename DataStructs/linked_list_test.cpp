@@ -19,12 +19,6 @@ BOOST_AUTO_TEST_CASE(listCreation) {
 
 
     BOOST_AUTO_TEST_CASE(nodeInsertion) {
-        std::cout << "Checking node insertion..." << std::endl;
-        List testList;
-        BOOST_CHECK(testList.getLength() == 0);
-        testList.insert(1);
-        BOOST_CHECK(testList.getLength() == 1);
-        std::cout << "Node insertion test passed.\n" << std::endl;
     }
 
 
