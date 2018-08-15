@@ -1,13 +1,6 @@
 # DataStructs
 Exploring common data structures in C++ using test-driven development
 
-something else
-
-another piece of text
-this time with 2
-
-another one
-
 ## Features
 
 ### Done
