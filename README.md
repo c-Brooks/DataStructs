@@ -2,6 +2,7 @@
 Exploring common data structures in C++ using test-driven development
 
 ## Features
+- nothing lol
 
 ### Done
 - LinkedList
